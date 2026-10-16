@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Senhas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>🔐 Simulador de Senhas</h1>
+    <p>Teste combinações curtas em um ambiente educativo.</p>
+
+    <label for="senha">Senha de demonstração (até 3 caracteres):</label>
+    <input id="senha" type="password" maxlength="3"
+           placeholder="Ex.: ab1">
+
+    <button id="iniciar">Iniciar simulação</button>
+
+    <p id="status">Aguardando início...</p>
+    <progress id="barra" value="0" max="1"></progress>
+    <p id="progresso">Tentativas: 0</p>
+    <div id="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  
